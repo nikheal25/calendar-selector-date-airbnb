@@ -88,7 +88,7 @@ class DetailViewController: UIViewController {
     private func makeContent() -> CalendarViewContent {
         //        let selectedDay = self.selectedDay
         
-//        let calendar = Calendar(identifier: .gregorian)
+        //        let calendar = Calendar(identifier: .gregorian)
         
         let startDate = calendar.date(from: DateComponents(year: 2020, month: 01, day: 01))!
         let endDate = calendar.date(from: DateComponents(year: 2021, month: 12, day: 31))!
@@ -138,6 +138,17 @@ class DetailViewController: UIViewController {
                         dayView.isHighlighted = isHighlighted
                 })
         }
+        .withDayRangeItemProvider(for: dateRanges) { dayRangeLayoutContext in
+            CalendarItem<DayRangeIndicatorView, [CGRect]>(
+                viewModel: dayRangeLayoutContext.daysAndFrames.map { $0.frame },
+                styleID: "Default",
+                buildView: { DayRangeIndicatorView() },
+                updateViewModel: { dayRangeIndicatorView, framesOfDaysToHighlight in
+                    dayRangeIndicatorView.framesOfDaysToHighlight = framesOfDaysToHighlight
+            })
+        }
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
