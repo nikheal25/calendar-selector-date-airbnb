@@ -1,0 +1,6 @@
+framework module Pods_horizontalCalendar {
+  umbrella header "Pods-horizontalCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,16 @@
 		5521EF8D24F3BE5800CF7FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5521EF8B24F3BE5800CF7FA4 /* Main.storyboard */; };
 		5521EF8F24F3BE5B00CF7FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5521EF8E24F3BE5B00CF7FA4 /* Assets.xcassets */; };
 		5521EF9224F3BE5B00CF7FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5521EF9024F3BE5B00CF7FA4 /* LaunchScreen.storyboard */; };
+		5521EF9A24F3C55500CF7FA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521EF9924F3C55500CF7FA4 /* DetailViewController.swift */; };
+		5521EF9C24F3C64A00CF7FA4 /* DayRangeSelectionDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521EF9B24F3C64A00CF7FA4 /* DayRangeSelectionDemoViewController.swift */; };
+		5521EF9E24F3C68700CF7FA4 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521EF9D24F3C68700CF7FA4 /* DayView.swift */; };
+		5521EFA024F3C74500CF7FA4 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521EF9F24F3C74500CF7FA4 /* DemoViewController.swift */; };
+		5521EFA224F3CBE400CF7FA4 /* DayRangeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5521EFA124F3CBE400CF7FA4 /* DayRangeIndicatorView.swift */; };
+		D3CB557725AB8D5C2B3306EF /* Pods_horizontalCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF70B0011423CD2030DB0EB0 /* Pods_horizontalCalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		122C68116ACCD5852BEFD9F9 /* Pods-horizontalCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-horizontalCalendar.release.xcconfig"; path = "Target Support Files/Pods-horizontalCalendar/Pods-horizontalCalendar.release.xcconfig"; sourceTree = "<group>"; };
 		5521EF8224F3BE5800CF7FA4 /* horizontalCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = horizontalCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5521EF8524F3BE5800CF7FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5521EF8724F3BE5800CF7FA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,13 @@
 		5521EF8E24F3BE5B00CF7FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5521EF9124F3BE5B00CF7FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5521EF9324F3BE5B00CF7FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5521EF9924F3C55500CF7FA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5521EF9B24F3C64A00CF7FA4 /* DayRangeSelectionDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRangeSelectionDemoViewController.swift; sourceTree = "<group>"; };
+		5521EF9D24F3C68700CF7FA4 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		5521EF9F24F3C74500CF7FA4 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		5521EFA124F3CBE400CF7FA4 /* DayRangeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRangeIndicatorView.swift; sourceTree = "<group>"; };
+		DF70B0011423CD2030DB0EB0 /* Pods_horizontalCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_horizontalCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F950488C8214F4953ED3B57B /* Pods-horizontalCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-horizontalCalendar.debug.xcconfig"; path = "Target Support Files/Pods-horizontalCalendar/Pods-horizontalCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CB557725AB8D5C2B3306EF /* Pods_horizontalCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FE7FFECD1558146BBBE233D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F950488C8214F4953ED3B57B /* Pods-horizontalCalendar.debug.xcconfig */,
+				122C68116ACCD5852BEFD9F9 /* Pods-horizontalCalendar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5521EF7924F3BE5800CF7FA4 = {
 			isa = PBXGroup;
 			children = (
 				5521EF8424F3BE5800CF7FA4 /* horizontalCalendar */,
 				5521EF8324F3BE5800CF7FA4 /* Products */,
+				3FE7FFECD1558146BBBE233D /* Pods */,
+				8161EC5297ED78CA51BC3FD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +86,24 @@
 				5521EF8724F3BE5800CF7FA4 /* SceneDelegate.swift */,
 				5521EF8924F3BE5800CF7FA4 /* ViewController.swift */,
 				5521EF8B24F3BE5800CF7FA4 /* Main.storyboard */,
+				5521EF9F24F3C74500CF7FA4 /* DemoViewController.swift */,
+				5521EF9924F3C55500CF7FA4 /* DetailViewController.swift */,
+				5521EF9B24F3C64A00CF7FA4 /* DayRangeSelectionDemoViewController.swift */,
+				5521EFA124F3CBE400CF7FA4 /* DayRangeIndicatorView.swift */,
+				5521EF9D24F3C68700CF7FA4 /* DayView.swift */,
 				5521EF8E24F3BE5B00CF7FA4 /* Assets.xcassets */,
 				5521EF9024F3BE5B00CF7FA4 /* LaunchScreen.storyboard */,
 				5521EF9324F3BE5B00CF7FA4 /* Info.plist */,
 			);
 			path = horizontalCalendar;
+			sourceTree = "<group>";
+		};
+		8161EC5297ED78CA51BC3FD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF70B0011423CD2030DB0EB0 /* Pods_horizontalCalendar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5521EF9624F3BE5B00CF7FA4 /* Build configuration list for PBXNativeTarget "horizontalCalendar" */;
 			buildPhases = (
+				5067F97E8136953B7A9310DC /* [CP] Check Pods Manifest.lock */,
 				5521EF7E24F3BE5800CF7FA4 /* Sources */,
 				5521EF7F24F3BE5800CF7FA4 /* Frameworks */,
 				5521EF8024F3BE5800CF7FA4 /* Resources */,
+				2BA3349605EBFDDDA039B94B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +174,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BA3349605EBFDDDA039B94B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-horizontalCalendar/Pods-horizontalCalendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-horizontalCalendar/Pods-horizontalCalendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-horizontalCalendar/Pods-horizontalCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5067F97E8136953B7A9310DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-horizontalCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5521EF7E24F3BE5800CF7FA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5521EF8A24F3BE5800CF7FA4 /* ViewController.swift in Sources */,
+				5521EFA224F3CBE400CF7FA4 /* DayRangeIndicatorView.swift in Sources */,
+				5521EF9E24F3C68700CF7FA4 /* DayView.swift in Sources */,
+				5521EF9C24F3C64A00CF7FA4 /* DayRangeSelectionDemoViewController.swift in Sources */,
 				5521EF8624F3BE5800CF7FA4 /* AppDelegate.swift in Sources */,
+				5521EFA024F3C74500CF7FA4 /* DemoViewController.swift in Sources */,
 				5521EF8824F3BE5800CF7FA4 /* SceneDelegate.swift in Sources */,
+				5521EF9A24F3C55500CF7FA4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +370,7 @@
 		};
 		5521EF9724F3BE5B00CF7FA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F950488C8214F4953ED3B57B /* Pods-horizontalCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +389,7 @@
 		};
 		5521EF9824F3BE5B00CF7FA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122C68116ACCD5852BEFD9F9 /* Pods-horizontalCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
